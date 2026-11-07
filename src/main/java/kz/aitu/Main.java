@@ -12,13 +12,18 @@ public class Main {
         root.add(homework);
 
         TotalSizeVisitor sizeVisitor = new TotalSizeVisitor();
-
         System.out.println(
                 "Total size: " + sizeVisitor.calculate(root) + " bytes"
         );
 
         SearchVisitor searchVisitor = new SearchVisitor(".txt", 150);
-
         System.out.println("Found files: " + searchVisitor.search(root));
+
+        StatisticsVisitor statistics = new StatisticsVisitor();
+        statistics.calculate(root);
+
+        System.out.println("Files: " + statistics.getFileCount());
+        System.out.println("Directories: " + statistics.getDirectoryCount());
+        System.out.println("Max depth: " + statistics.getMaxDepth());
     }
 }
