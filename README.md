@@ -18,15 +18,12 @@ The program includes three visitors:
 - Maven
 - JUnit 5
 
-## Run the application
-Run `kz.aitu.Main` in IntelliJ IDEA.
+## Run
+mvn package
+java -cp target/classes kz.aitu.Main
 
-## Run tests
-From the project directory:
-
-```bash
+## Tests
 mvn test
-```
 
 ## Example Output
 ```text
