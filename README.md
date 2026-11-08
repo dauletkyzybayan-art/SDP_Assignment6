@@ -18,12 +18,20 @@ The program includes three visitors:
 - Maven
 - JUnit 5
 
+
 ## Run
+
+```bash
 mvn package
 java -cp target/classes kz.aitu.Main
+```
 
 ## Tests
+
+```bash
 mvn test
+```
+
 
 ## Example Output
 ```text
